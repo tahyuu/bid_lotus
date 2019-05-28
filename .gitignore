@@ -1,0 +1,5 @@
+Config/Config_inthinc.db
+*.pyc
+*.log
+*.py~
+*.un~
