@@ -8,20 +8,20 @@ sys.path.append(currentDir +"/Common")
 
 class TransferFile:
     def __init__(self, fileName=None):
-	self._setting = {} 
-	if fileName == None:
-	    return
-	try:
-	    self._file = open(fileName, "r")
-	except IOError, exception:
-	    print "Can't open the configuratin file: ", exception
-	    sys.exit(1)
+	    self._setting = {} 
+	    if fileName == None:
+	        return
+	    try:
+	        self._file = open(fileName, "r")
+	    except IOError, exception:
+	        print "Can't open the configuratin file: ", exception
+	        sys.exit(1)
 	    
 	#self.Read()
     def Read(self):
-	lines = self._file.readlines()
-        print len(lines)
-        cos=''
+        lines = self._file.readlines()
+        #print len(lines)
+        #cos=''
         i=1
         for line in lines:
 
